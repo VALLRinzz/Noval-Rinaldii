@@ -1,0 +1,303 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #18222b;
+    color: white;
+    font-family: monospace;
+    text-align: center;
+    
+    min-height: 100vh;
+    display:flex;
+    flex-direction: column;
+
+    padding-top: 95px;
+
+}
+/*my judul gweh*/
+h1 {
+    font-size: 30px;
+    margin-bottom: 15px;
+    margin-top: 50px;
+    color: #ffd43b;
+    letter-spacing: 3px;
+}
+h2{
+    font-size: 18px;
+    margin-bottom: 50px;
+    margin-top: 2px;
+    letter-spacing: 1px ;
+    
+}
+.h2isi{
+    color: solid white;
+    font-size: 20px;
+    margin-bottom: 1px;
+    margin-top: 2px;
+    letter-spacing: 1px ;
+}  
+h3{
+    margin-bottom: 50px;
+}
+/*my navigasi gweh*/
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 95px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+
+    margin: 0;
+    box-sizing: border-box;
+    padding: 15px 30px;
+    background-color: #111;
+    text-align: center;
+    z-index: 1000;
+}
+.navigasi{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.navigasi a {
+    display: inline-block;
+    margin: 0 8px;
+    padding: 10px 18px;
+
+    color: white;
+    text-decoration: none;
+
+    border: 2px solid transparent;
+    border-radius: 8px;
+
+    font-size: 18px;
+
+    transition:
+        color 0.4s cubic-bezier(.4,0,.2,1),
+        background-color 0.4s cubic-bezier(.4,0,.2,1),
+        border-color 0.4s cubic-bezier(.4,0,.2,1),
+        box-shadow 0.4s cubic-bezier(.4,0,.2,1),
+        transform 0.4s cubic-bezier(.4,0,.2,1);
+}
+
+.navigasi a:hover {
+    color: #ffd43b;
+    background-color: #1c1c1c;
+    border-color: #ffd43b;
+    box-shadow: 0 0 15px rgba(255, 212, 59, 0.35);
+    transform: translateY(-2px);
+}
+.logo{
+    justify-content: space-between;
+    width: 60px ;
+    margin: 10px auto 0px;
+    padding: 5px    ;
+    margin-left: 20px;
+    display: flex;
+    transition: 0.4s ease;
+    object-fit: contain;
+}
+footer{
+    background-color: black;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: auto;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+/*my profil gweh*/
+.PP {
+    display: block;
+    width: 110px;
+    height: 110px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid white;
+    margin: 0 auto 25px;
+        transition:
+        color 0.4s cubic-bezier(.4,0,.2,1),
+        background-color 0.4s cubic-bezier(.4,0,.2,1),
+        border-color 0.4s cubic-bezier(.4,0,.2,1),
+        box-shadow 0.4s cubic-bezier(.4,0,.2,1),
+        transform 0.4s cubic-bezier(.4,0,.2,1);
+}
+.PP:hover{
+    color: #ffd43b;
+    background-color: #1c1c1c;
+    border-color: #ffd43b;
+    box-shadow: 0 0 15px rgba(255, 212, 59, 0.35);
+    transform: translateY(-2px);
+}
+.about-section {
+    color:white;
+    padding: 35px 5%;
+}
+.about{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 30px;
+    border: 2px solid #374151;
+    border-radius: 15px;
+    background-color: #111;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+.about > h1{
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+.about > p{
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 10px;
+}
+.about-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-top:35px;
+    align-items: stretch;
+}
+.tentang-semua{
+    background-color: #18222b;
+    border: 2px solid white;
+    border-radius: 12px;
+    padding: 25px 15px;
+    min-width: 0;
+      transition:
+        color 0.4s cubic-bezier(.4,0,.2,1),
+        background-color 0.4s cubic-bezier(.4,0,.2,1),
+        border-color 0.4s cubic-bezier(.4,0,.2,1),
+        box-shadow 0.4s cubic-bezier(.4,0,.2,1),
+        transform 0.4s cubic-bezier(.4,0,.2,1);
+}
+.tentang-semua h1{
+    font-size: 23px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    color: #ffd43b;
+}
+.tentang-semua ul{
+    list-style: none;       
+    padding: 0;
+}
+.tentang-semua li{
+    line-height: 1.9;
+    border-radius: 8px;
+    transition: 
+        color 0.4s cubic-bezier(.4,0,.2,1),
+        background-color 0.4s cubic-bezier(.4,0,.2,1),
+        border-color 0.4s cubic-bezier(.4,0,.2,1),
+        box-shadow 0.4s cubic-bezier(.4,0,.2,1),
+        transform 0.4s cubic-bezier(.4,0,.2,1);
+}
+.about p{
+    padding: 0 20px;
+}
+.tentang-semua li:hover{
+    color: #1c1c1c;
+    background-color: white;
+    border-color: #ffd43b;
+    box-shadow: 0 0 15px rgba(230, 25, 25, 0.35);
+    transform: translateY(-2px);
+}
+.tentang-semua a{
+    display: block;
+    padding: 0;
+    min-width: 0;
+    line-height: 1.9;
+
+    color: white;
+    text-decoration: none;
+
+    border: 2px solid transparent;
+    border-radius: 8px;
+    background-color: #18222b;
+
+    transition:
+        color 0.4s cubic-bezier(.4,0,.2,1),
+        background-color 0.4s cubic-bezier(.4,0,.2,1),
+        border-color 0.4s cubic-bezier(.4,0,.2,1),
+        box-shadow 0.4s cubic-bezier(.4,0,.2,1),
+        transform 0.4s cubic-bezier(.4,0,.2,1);
+}
+.pepe{
+    margin-bottom: 35px;
+}
+.tentang-semua a:hover {
+    color: #1c1c1c;
+    background-color: white;
+    box-shadow: 0 0 15px rgba(230, 25, 25, 0.35);
+    transform: translateY(-2px);
+}
+.semuanya{
+    max-width: 1000px;
+    margin: 40px auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+
+}
+main{
+    border: 2px solid #303b45;
+    border-radius: 10px;
+    width: 1100px;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto 50px;
+    background-color: #111;
+}
+.prestasi{
+    background-color: #18222b;
+    border: 2px solid #374151;
+    border-radius: 15px;
+    padding:20px;
+            transition:
+        color 0.4s cubic-bezier(.4,0,.2,1),
+        background-color 0.4s cubic-bezier(.4,0,.2,1),
+        border-color 0.4s cubic-bezier(.4,0,.2,1),
+        box-shadow 0.4s cubic-bezier(.4,0,.2,1),
+        transform 0.4s cubic-bezier(.4,0,.2,1);
+}
+.penghargan1{
+    width: 100%;
+    aspect-ratio: 9 / 16;
+    object-fit: contain;
+    border: 2px solid white;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+.prestasi h2{
+    color: white;
+    margin: 10 0 15px;
+}
+.prestasi p{
+    font-size: 14px;
+    line-height: 1.8;
+    margin-bottom: 0;
+}
+.prestasi:hover{
+        color: white;
+    background-color: #1c1c1c;
+    border-color: #ffd43b;
+    box-shadow: 0 0 15px rgba(255, 212, 59, 0.35);
+    transform: translateY(-2px);
+}
+.penghargan2{
+    width: 100%;
+    aspect-ratio: 9 / 16;
+    object-fit: contain;
+    border: 2px solid white;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
